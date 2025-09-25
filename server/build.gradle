@@ -75,6 +75,11 @@ dependencies {
     testImplementation 'org.testcontainers:postgresql'
 }
 
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    mavenCentral()
+}
+
 tasks.named("test") {
     useJUnitPlatform()
 }
